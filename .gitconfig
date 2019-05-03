@@ -1,0 +1,30 @@
+[alias]
+        b = branch
+        st = status
+        ci = commit
+        co = checkout
+        d = diff
+        s = show
+        dn = diff --no-prefix
+        sn = show --no-prefix
+        ds = diff --staged
+        dw = diff --word-diff
+        l = log --graph --decorate --pretty=oneline --abbrev-commit
+        la = log --graph --decorate --pretty=oneline --abbrev-commit --all
+        mff = merge --ff-only
+        pff = pull --ff-only
+[color]
+        branch = auto
+        diff = auto
+        interactive = auto
+        status = auto
+[core]
+	whitespace = tab-in-indent,trailing-space,cr-at-eol
+[push]
+	default = simple
+[rebase]
+	autosquash = true
+[pack]
+	window = 200
+	depth = 100
+	windowMemory = 1600m

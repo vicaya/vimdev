@@ -13,7 +13,7 @@ RUN apt-get update && \
         https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 COPY .bashrc .gitconfig .vimrc $HOME/
-RUN vim -T dumb +PlugUpdate +qall && chmod -R a+rX $HOME/
+RUN mkdir /workspace && vim -T dumb +PlugUpdate +qall && chmod -R a+rX $HOME/
 
 WORKDIR /workspace
-ENTRYPOINT ["vim", "-i", "/workspace/.viminfo"]
+ENTRYPOINT ["vim"]

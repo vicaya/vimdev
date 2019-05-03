@@ -1,5 +1,6 @@
 "set nocp lz
 set nocompatible lazyredraw
+set viminfo+=n/workspace/.viminfo
 
 call plug#begin()
 
